@@ -1,11 +1,19 @@
 /* CUSTOM PROPS */
 :root {
+  --main-font: "Nunito Sans", "Arial", sans-serif;
   --site_main-color: #fff;
   --light_mode-extra-bg-color: #F2F2F2;
   --light_mode-fonts-color: #111517;
   --light_mode-input-color: #848484;
   --dark_mode-main-bg-color: #2B3844;
   --dark_mode-extra-bg-color: #202C36;
+}
+
+.dark-mode {
+  --site_main-color: #2B3844;
+  --light_mode-extra-bg-color: #202C36;
+  --light_mode-fonts-color: var(--site_main-color);
+  --light_mode-input-color: var(--site_main-color);
 }
 
 /* FONT-FACE  */
@@ -63,13 +71,15 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--site_main-color);
   color: #222;
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 0;
   padding: 0;
   margin: 0;
+  transition: background-color 0.6s ease,
+  color 0.6s ease;
 }
 
 img {
@@ -92,16 +102,4 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
-}
-
-
-/* RETINA-BG  */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
 }
