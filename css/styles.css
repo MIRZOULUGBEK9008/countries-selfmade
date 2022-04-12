@@ -53,7 +53,6 @@
   font-display: swap;
 }
 
-
 /* GLOBAL-STYLES  */
 html {
   box-sizing: border-box;
@@ -76,6 +75,7 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 16px;
+  font-weight: 300;
   padding: 0;
   margin: 0;
   transition: background-color 0.6s ease,
@@ -118,7 +118,7 @@ img {
   padding-right: 30px;
   font-size: 24px;
   line-height: normal;
-  font-weight: 900;
+  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -236,9 +236,16 @@ img {
 }
 
 .card-link-for-other-page {
+  display: inline-block;
   text-decoration: none;
   color: var(--light_mode-fonts-color);
-  transition: color 0.6s ease;
+  outline: none;
+  transition: color 0.6s ease,
+  transform 0.3s ease;
+}
+
+.card-link-for-other-page:focus {
+  transform: scale(0.9);
 }
 
 .country-flag-img {
@@ -259,12 +266,16 @@ img {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .country-tiny-info {
   margin: 0;
   margin-bottom: 8px;
+}
+
+.tiny-bold {
+  font-weight: 600;
 }
 
 
