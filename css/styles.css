@@ -134,8 +134,9 @@ img {
 .site-dark-mode-toggle {
   border: none;
   background-color: var(--site_main-color);
-  transition: transform 0.3s ease;
   cursor: pointer;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
 }
 
 .site-dark-mode-toggle:active {
@@ -346,6 +347,7 @@ img {
 .full-info-inner {
   padding-left: 120px;
 }
+
 .detail-main-heading {
   margin: 0;
   margin-bottom: 23px;
@@ -363,10 +365,10 @@ img {
 
 .full-information-left-right {
   display: flex;
-  padding-bottom: 68px;
+  margin-bottom: 68px;
 }
 .full-information-left {
-  padding-right: 141px;
+  margin-right: 141px;
 }
 
 .country-tiny-info-detail {
