@@ -255,7 +255,6 @@ img {
 }
 
 .country-flag-img {
-  margin-bottom: 24px;
   width: 264px;
   height: 160px;
   object-fit: cover;
@@ -264,6 +263,7 @@ img {
 }
 
 .country-card-box {
+  padding-top: 24px;
   padding-left: 24px;
 }
 
@@ -286,7 +286,7 @@ img {
   text-decoration: underline;
 }
 
-.country-tiny-info {
+.country-tiny-info:not(:last-child) {
   margin: 0;
   margin-bottom: 8px;
 }
