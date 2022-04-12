@@ -98,6 +98,11 @@ img {
   margin-right: auto;
 }
 
+*:focus {
+  outline: 3px dotted var(--light_mode-fonts-color);
+  outline-offset: 3px;
+}
+
 
 /* SITE-HEADER */
 .site-header {
@@ -208,11 +213,6 @@ img {
   background-color: var(--site_main-color);
   border-radius: 5px;
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294);
-  transition: transform 0.3s ease;
-}
-
-.country-info-list-item:active {
-  transform: scale(0.9);
 }
 
 .country-info-list-item:nth-child(4n) {
@@ -264,6 +264,11 @@ img {
 .card-heading {
   margin: 0;
   margin-bottom: 16px;
+}
+
+.card-heading-link {
+  text-decoration: none;
+  color: var(--light_mode-fonts-color);
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
