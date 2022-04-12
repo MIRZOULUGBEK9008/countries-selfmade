@@ -331,9 +331,6 @@ img {
   font-weight: 300;
 }
 
-.detail-info-wrapper {
-}
-
 .full-info-wrapper {
   display: flex;
   align-items: center;
@@ -371,16 +368,13 @@ img {
 .full-information-left {
   padding-right: 141px;
 }
-.full-information-right {
-}
+
 .country-tiny-info-detail {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
   white-space: nowrap;
 }
-
-
 
 .tiny-bold-detail-border {
   margin-right: 15px;
