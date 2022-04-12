@@ -230,6 +230,12 @@ img {
   margin-bottom: 0;
 }
 
+.card-link-for-other-page {
+  text-decoration: none;
+  color: var(--light_mode-fonts-color);
+  transition: color 0.6s ease;
+}
+
 .country-flag-img {
   margin-bottom: 24px;
   width: 264px;
