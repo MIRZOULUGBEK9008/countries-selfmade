@@ -125,7 +125,12 @@ img {
 .site-dark-mode-toggle {
   border: none;
   background-color: var(--site_main-color);
+  transition: transform 0.3s ease;
   cursor: pointer;
+}
+
+.site-dark-mode-toggle:active {
+  transform: scale(0.9);
 }
 
 .toggle-wrapper {
@@ -190,8 +195,6 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  /* margin-right: -75px; */
-  /* margin-bottom: -75px; */
   list-style: none;
 }
 
@@ -204,13 +207,15 @@ img {
   min-height: 336px;
   background-color: var(--site_main-color);
   border-radius: 5px;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294);
+  transition: transform 0.3s ease;
 }
 
-.country-info-list-item:nth-child(4) {
-  margin-right: -75px;
+.country-info-list-item:active {
+  transform: scale(0.9);
 }
 
-.country-info-list-item:last-child {
+.country-info-list-item:nth-child(4n) {
   margin-right: -75px;
 }
 
@@ -260,4 +265,40 @@ img {
 .country-tiny-info {
   margin: 0;
   margin-bottom: 8px;
+}
+
+
+
+
+
+/* ............................. */
+/* DETAIL-PAGE */
+/* ............................. */
+.detail-info-wrapper {
+  padding-top: 80px;
+  padding-bottom: 343px;
+  background-color: var(--light_mode-extra-bg-color);
+}
+
+.back-button-link {
+  display: inline-block;
+  background-color: var(--site_main-color);
+  text-decoration: none;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 39px;
+  padding-left: 32px;
+  margin-bottom: 80px;
+  transition: transform 0.3s ease;
+}
+
+.back-button-link:active {
+  transform: scale(0.9);
+}
+
+.back-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
 }
