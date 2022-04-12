@@ -99,8 +99,8 @@ img {
 }
 
 *:focus {
-  outline: 3px dotted var(--light_mode-fonts-color);
-  outline-offset: 3px;
+  outline: 3px dashed var(--light_mode-fonts-color);
+  outline-offset: 5px;
 }
 
 
@@ -268,6 +268,7 @@ img {
 }
 
 .card-heading-link {
+  display: inline-block;
   text-decoration: none;
   color: var(--light_mode-fonts-color);
   font-size: 18px;
