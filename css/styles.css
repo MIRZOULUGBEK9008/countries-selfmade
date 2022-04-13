@@ -403,7 +403,7 @@ textarea:focus, input:focus {
   margin: 0;
   margin-bottom: 23px;
   font-size: 32px;
-  line-height: auto;
+  line-height: normal;
   font-weight: 800;
 }
 
