@@ -2,7 +2,7 @@
 :root {
   --main-font: "Nunito Sans", "Arial", sans-serif;
   --site_main-color: #fff;
-  --light_mode-extra-bg-color: #f2f2f2;
+  --light_mode-extra-bg-color: #fafafa;
   --light_mode-fonts-color: #111517;
   --dark_mode-svg-bg: #000;
   --country-link-bg: var(--site_main-color);
@@ -214,6 +214,7 @@ img {
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 74px;
+  margin-right: 30px;
   background-color: var(--site_main-color);
   border: none;
   border-radius: 5px;
