@@ -147,28 +147,26 @@ a {
   padding-bottom: 24px;
 }
 
+.site-main-heading-wrapper {
+  margin-right: 30px;
+}
+
 .site-main-heading {
-  margin: 0;
-  padding-right: 30px;
   transition: transform 0.3s ease;
 }
 
-.site-main-heading:active {
-  transform: scale(0.9);
-}
-
 .site-main-heading-link {
-  color: var(--light_mode-fonts-color);
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 800;
-  white-space: nowrap;
+  display: flex;
   transition: var(--main-transition),
   opacity 0.4s ease;
 }
 
 .site-main-heading-link:hover {
   opacity: 0.8;
+}
+
+.site-main-heading-link:active {
+  opacity: 0.6;
 }
 
 .site-dark-mode-toggle {
