@@ -8,7 +8,7 @@
   --country-link-bg: var(--site_main-color);
   --site_main-color-detail: #fff;
   --light_mode-input-color: rgba(132, 132, 132, 1);
-  --main-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.0532);
+  --main-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
   --main-transition: color 0.4s ease;
 }
 
@@ -106,6 +106,10 @@ img {
   margin-right: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 *:focus {
   outline: 3px dashed var(--light_mode-fonts-color);
   outline-offset: 5px;
@@ -146,10 +150,25 @@ img {
 .site-main-heading {
   margin: 0;
   padding-right: 30px;
+  transition: transform 0.3s ease;
+}
+
+.site-main-heading:active {
+  transform: scale(0.9);
+}
+
+.site-main-heading-link {
+  color: var(--light_mode-fonts-color);
   font-size: 24px;
   line-height: normal;
   font-weight: 800;
   white-space: nowrap;
+  transition: var(--main-transition),
+  opacity 0.4s ease;
+}
+
+.site-main-heading-link:hover {
+  opacity: 0.8;
 }
 
 .site-dark-mode-toggle {
