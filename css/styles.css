@@ -4,7 +4,7 @@
   --site_main-color: #fff;
   --light_mode-extra-bg-color: #fafafa;
   --light_mode-fonts-color: #111517;
-  --dark_mode-svg-bg: #000;
+  --dark_mode-svg-bg: var(--light_mode-fonts-color);
   --country-link-bg: var(--site_main-color);
   --site_main-color-detail: #fff;
   --light_mode-input-color: rgba(132, 132, 132, 1);
@@ -17,7 +17,7 @@
   --light_mode-extra-bg-color: #202c36;
   --light_mode-fonts-color: #fff;
   --light_mode-input-color: #fff;
-  --dark_mode-svg-bg: #fff;
+  --dark_mode-svg-bg: transparent;
   --country-link-bg: #2b3844;
   --site_main-color-detail: #202c36;
 }
