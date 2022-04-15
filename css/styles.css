@@ -190,6 +190,7 @@ a {
   margin-left: 8px;
   text-transform: capitalize;
   color: var(--light_mode-fonts-color);
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: normal;
   font-weight: 600;
