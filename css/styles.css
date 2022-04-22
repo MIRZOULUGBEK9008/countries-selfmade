@@ -303,6 +303,7 @@ textarea:focus, input:focus {
 }
 
 .country-info-list-item {
+  position: relative;
   width: calc(338px - 75px);
   margin-left: 75px;
   margin-bottom: 75px;
@@ -350,6 +351,15 @@ textarea:focus, input:focus {
   line-height: 26px;
   font-weight: 800;
   transition: color 0.6s ease;
+}
+
+.card-heading-link::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
 }
 
 .card-heading-link:hover {
