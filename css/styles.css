@@ -222,6 +222,7 @@ a {
   position: absolute;
   left: 32px;
   top: 30%;
+  pointer-events: none;
 }
 
 .search-generator {
