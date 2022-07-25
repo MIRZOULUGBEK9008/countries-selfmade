@@ -1,6 +1,5 @@
 /* CUSTOM PROPS */
 :root {
-  --main-font: "Nunito Sans", "Arial", sans-serif;
   --site_main-color: #fff;
   --light_mode-extra-bg-color: #fafafa;
   --light_mode-fonts-color: #111517;
@@ -8,8 +7,10 @@
   --country-link-bg: var(--site_main-color);
   --site_main-color-detail: #fff;
   --light_mode-input-color: rgba(132, 132, 132, 1);
+
+  --main-font: "Nunito Sans", "Arial", sans-serif;
+
   --main-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
-  --main-transition: color 0.4s ease;
 }
 
 .dark-mode {
@@ -84,7 +85,6 @@ body {
   font-weight: 300;
   padding: 0;
   margin: 0;
-  transition: var(--main-transition);
 }
 
 .site-body-detail {
@@ -115,127 +115,23 @@ a {
   outline-offset: 5px;
 }
 
-/* TIPO-BUTTON  */
-.back-button-link {
-  display: inline-block;
-  background-color: var(--site_main-color);
-  text-decoration: none;
-  border-radius: 6px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 39px;
-  padding-left: 32px;
-  margin-bottom: 80px;
-  transition: transform 0.3s ease;
+
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none ;
+  -webkit-text-fill-color: ;
+  -webkit-box-shadow: 0 0 0px 1000px 000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
-.back-button-link:active {
-  transform: scale(0.9);
-}
-
-/* SITE-HEADER */
-.site-header {
-  background-color: var(--site_main-color);
-  box-shadow: var(--main-box-shadow);
-}
-
-.site-header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.site-main-heading-wrapper {
-  margin-right: 30px;
-}
-
-.site-main-heading {
-  transition: transform 0.3s ease;
-}
-
-.site-main-heading-link {
-  display: flex;
-  transition: var(--main-transition),
-  opacity 0.4s ease;
-}
-
-.site-main-heading-link:hover {
-  opacity: 0.8;
-}
-
-.site-main-heading-link:active {
-  opacity: 0.6;
-}
-
-.site-dark-mode-toggle {
-  border: none;
-  background-color: var(--site_main-color);
-  cursor: pointer;
-  border-radius: 2px;
-  transition: transform 0.3s ease;
-}
-
-.site-dark-mode-toggle:active {
-  transform: scale(0.9);
-}
-
-.toggle-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.toggle-text {
-  margin-left: 8px;
-  text-transform: capitalize;
-  color: var(--light_mode-fonts-color);
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: normal;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: var(--main-transition);
-}
-
-
-/* MAIN-CONTENT  */
-.main-content {
-  flex-grow: 1;
-}
-
-.site-main-wrapper {
-  padding-top: 48px;
-  padding-bottom: 45px;
-}
-
-
-/* SITE-FORM */
-.site-form {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 48px;
-}
-
-.search-icon-svg {
-  position: absolute;
-  left: 32px;
-  top: 30%;
-  pointer-events: none;
-}
-
-.search-generator {
-  min-width: 480px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 74px;
-  margin-right: 30px;
-  background-color: var(--site_main-color);
-  border: none;
-  border-radius: 5px;
-  box-shadow: var(--main-box-shadow);
-}
 
 /* CLEAR "X" FROM INPUT  */
 input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
@@ -251,22 +147,139 @@ textarea:focus, input:focus {
   color: var(--light_mode-fonts-color);
 }
 
-::placeholder {
-  color: var(--light_mode-input-color);
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+
+
+/* LOGO  */
+.logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo__img {
+  display: block;
+  width: 233px;
+  height: 19px;
+  object-fit: contain;
+}
+
+/* BUTTON  */
+.button {
+  display: inline-block;
+  min-width: 136px;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button--accent {
+  background-color: var(--site_main-color);
+  transition: transform 0.3s ease;
+}
+
+.button--accent:active {
+  transform: scale(0.9);
+}
+
+.button--toggler {
+  border: none;
+}
+
+.toggler__inner {
+  display: flex;
+  align-items: center;
+}
+
+.toggler__text {
+  margin-left: 8px;
+  text-transform: capitalize;
+  color: var(--light_mode-fonts-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 600;
+  white-space: nowrap;
   transition: var(--main-transition);
 }
 
-.input-icon-svg {
-  position: absolute;
-  cursor: pointer;
-  top: 43%;
-  right: 18px;
+/* SITE-HEADER */
+.site-header {
+  background-color: var(--site_main-color);
+  box-shadow: var(--main-box-shadow);
 }
 
-.select-region {
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.site-header__logo {
+  margin-right: 30px;
+}
+
+.site-header__logo:hover {
+  opacity: 0.8;
+}
+
+.site-header__logo:active {
+  opacity: 0.6;
+}
+
+
+/* MAIN-CONTENT  */
+.main-content {
+  flex-grow: 1;
+}
+
+.index-hero {
+  padding-top: 48px;
+  padding-bottom: 45px;
+}
+
+
+/* SITE-FORM */
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.form__search-wrapper {
+  position: relative;
+}
+
+.form__search-icon {
+  position: absolute;
+  left: 32px;
+  top: 30%;
+  pointer-events: none;
+}
+
+.form__search {
+  min-width: 480px;
+  padding: 18px;
+  padding-left: 74px;
+  color: var(--light_mode-fonts-color);
+  background-color: var(--site_main-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: var(--main-box-shadow);
+}
+
+.form__search-icon {
+  position: absolute;
+  top: 19px;
+  right: 32px;
+}
+
+.form__selector {
   -webkit-appearance: none;
   width: 200px;
   padding-top: 18px;
@@ -285,8 +298,8 @@ textarea:focus, input:focus {
 }
 
 
-/* COUNYTR-LIST  */
-.country-info-list {
+/* COUNTRy-LIST  */
+.countries {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -296,7 +309,7 @@ textarea:focus, input:focus {
   list-style: none;
 }
 
-.country-info-list-item {
+.countries__item {
   position: relative;
   width: calc(338px - 75px);
   margin-left: 75px;
@@ -321,23 +334,23 @@ textarea:focus, input:focus {
   transform: scale(0.9);
 }
 
-.country-flag-img {
+.countries__img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
 
-.country-card-box {
-  padding-top: 24px;
-  padding-left: 24px;
+.countries__inner {
+  padding: 24px;
+  padding-bottom: 46px;
 }
 
-.card-heading {
+.countries__title {
   margin: 0;
   margin-bottom: 16px;
 }
 
-.card-heading-link {
+.countries__title-link {
   display: inline-block;
   text-decoration: none;
   color: var(--light_mode-fonts-color);
@@ -347,38 +360,38 @@ textarea:focus, input:focus {
   transition: color 0.6s ease;
 }
 
-.card-heading-link::before {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
+.countries__title-link::before {
   content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.card-heading-link:hover {
+.countries__title-link:hover {
   text-decoration: underline;
 }
 
-.country-description-list {
+.countries__info {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.dls-list-item-wrapper {
+.countries__dt-dd-wrapper {
   display: flex;
 }
 
-.dls-list-item-wrapper:not(:last-child) {
+.countries__dt-dd-wrapper:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.decription-term {
+.countries__decription-term {
   font-weight: 600;
 }
 
-.desciption-detail {
+.countries__desciption-detail {
   margin-left: 4px;
 }
 
