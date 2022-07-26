@@ -223,7 +223,6 @@ textarea:focus, input:focus {
   line-height: normal;
   font-weight: 600;
   white-space: nowrap;
-  transition: var(--main-transition);
 }
 
 /* SITE-HEADER */
@@ -313,7 +312,6 @@ textarea:focus, input:focus {
   border: none;
   border-radius: 5px;
   box-shadow: var(--main-box-shadow);
-  transition: var(--main-transition);
   cursor: pointer;
 }
 
@@ -341,19 +339,6 @@ textarea:focus, input:focus {
   box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
 }
 
-.card-link-for-other-page {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--light_mode-fonts-color);
-  outline: none;
-  transition: color 0.6s ease,
-  transform 0.3s ease;
-}
-
-.card-link-for-other-page:focus {
-  transform: scale(0.9);
-}
-
 .countries__img {
   width: 100%;
   height: 160px;
@@ -377,7 +362,6 @@ textarea:focus, input:focus {
   font-size: 18px;
   line-height: 26px;
   font-weight: 800;
-  transition: color 0.6s ease;
 }
 
 .countries__title-link::before {
@@ -467,6 +451,7 @@ textarea:focus, input:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-shrink: 0;
 }
 
 .full-info--left {
