@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout( function () {
   document.querySelector(".lds-roller-wrapper").classList.add("lds-roller-wrapper--active");
-}, 1500);
+}, 900);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
