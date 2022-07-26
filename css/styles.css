@@ -19,7 +19,6 @@
   --light_mode-fonts-color: #fff;
   --light_mode-input-color: #fff;
   --dark_mode-svg-bg: transparent;
-  --country-link-bg: #2b3844;
   --site_main-color-detail: #202c36;
 }
 
@@ -128,7 +127,6 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: none ;
   -webkit-text-fill-color: var(--light_mode-fonts-color);
-  box-shadow: 0 0 0px 1000px 000 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -290,6 +288,12 @@ textarea:focus, input:focus {
   border: none;
   border-radius: 5px;
   box-shadow: var(--main-box-shadow);
+}
+
+.form__search::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--light_mode-input-color);
 }
 
 .form__search-icon {
