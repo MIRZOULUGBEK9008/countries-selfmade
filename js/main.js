@@ -1,3 +1,8 @@
+// LOADER
+document.addEventListener("DOMContentLoaded", function () {
+document.querySelector(".lds-roller-wrapper").classList.add("lds-roller-wrapper--active")
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const theme = localStorage.getItem("theme", "dark");
   const darkModeToggle = document.getElementById("dark-mode-toggle");
