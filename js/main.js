@@ -1,6 +1,9 @@
 // LOADER
 document.addEventListener("DOMContentLoaded", function () {
-document.querySelector(".lds-roller-wrapper").classList.add("lds-roller-wrapper--active")
+
+  setTimeout( function () {
+  document.querySelector(".lds-roller-wrapper").classList.add("lds-roller-wrapper--active");
+}, 1000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
